@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        小米商城 - 小米10 Pro、Redmi K30 Pro、小米MIX Alpha，小米电视官方网站
+    </title>
+    <!-- <link rel="stylesheet" href="./css//fontawesome-free-5.11.2-web/css/all.css">
+    <link rel="stylesheet" href="./css/reset/reset.css">
+    <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <link rel="icon" href="./favicon.ico" type='img'>
+    <script src='./main.js'></script> -->
+</head>
+
+<body>
+    <div id="header">
+        <div class="headerbaner-wrap">
+            <div class="headerbaner">
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="headertop-wrap">
+            <div class="headtop-inner">
+                <div class="left-inner">
+                    <ul class='left-list'>
+                        <li><a href="">小米商城</a></li>
+                        <li class='line'></li>
+                        <li><a href="">MIUI</a></li>
+                        <li class='line'></li>
+                        <li><a href="">loT</a></li>
+                        <li class='line'></li>
+                        <li><a href="">云服务</a></li>
+                        <li class='line'></li>
+                        <li><a href="">金融</a></li>
+                        <li class='line'></li>
+                        <li><a href="">有品</a></li>
+                        <li class='line'></li>
+                        <li><a href="">小爱开放平台</a></li>
+                        <li class='line'></li>
+                        <li><a href="">企业团购</a></li>
+                        <li class='line'></li>
+                        <li><a href="">资质证件</a></li>
+                        <li class='line'></li>
+                        <li><a href="">协议规则</a></li>
+                        <li class='line'></li>
+                        <li class='download'><a href="">下载app</a>
+                            <div><img src="data:image/png;base64,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"">
+                                小米商城APP</div>
+                        </li>
+                        <li class='line'></li>
+                        <li><a href="">智能生活</a></li>
+                        <li class='line'></li>
+                        <li><a href="">Select Location</a></li>
+                    </ul>
+                </div>
+                <div class='right-inner'>
+                    <ul class='right-list'>
+                        <li><a href="">登录</a></li>
+                        <li class='line'></li>
+                        <li><a href="">注册</a></li>
+                        <li class='line'></li>
+                        <li><a href="">消息通知</a></li>
+                        <li><a href="">
+                                <i class='fas fa-shopping-cart'></i>购物车（ 0 ）
+                            </a>
+                            <div class='shopping-goods'>
+                                <div>购物车中还没有商品，赶紧选购吧！</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="headernav-wrap">
+            <div class="headernav-inner">
+                <div class="head-logo"><a href="#">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAMAAABEQrEuAAAAdVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+qOdF8AAAAJnRSTlMAAQMGCA8VHCMqNzs8P0JSVFZlZpahsb3DxMrL2tvj6vLz9vn8/vVI6pMAAACYSURBVEiJ7c/JDoJAEEVRRAFBBJxABpl5//+JascQBlPdvYGQ9F29RZ1FaZpKtWDBRRJcu+4mBfwWaH0J4DX41HjCwCnBKh1BYBf4VdhCwMrRl1sCwHxhUGZygZFiVGJwwCHCpGhPAj2cAiDUCbB7zAFwJ8S5/ieqI/0JO3K/y2WTvu7FbG5UsM9PMmLQVsVzDGK+UKnW6A1cESvaLZ3/YAAAAABJRU5ErkJggg==" alt="">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0VDMUQzNzk0NEU4MTFFNzk2MkVGMzkwQUQ3RjNGMjYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0VDMUQzN0E0NEU4MTFFNzk2MkVGMzkwQUQ3RjNGMjYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDRUMxRDM3NzQ0RTgxMUU3OTYyRUYzOTBBRDdGM0YyNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDRUMxRDM3ODQ0RTgxMUU3OTYyRUYzOTBBRDdGM0YyNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoQEikwAAAEASURBVHja7JkxCsIwFIZbraCTirsOeoGO4gU8hRdw9AxuLl7AA+juAQRXL2BR8ARulSrGX8ggIa2ljYTI/+Ab+pK88JU0aakvhPBcj4r3B0EJSlCCEpSgBCUoQQlKaCMGogQJiMACdFLm2ChjYtMS9ZI3qwb6YAYOYKDp0yg6p43l1AVrk3PbeiZCMDZVLCg4bg8mOfpVwRAsQUtpG4GtTYkrOOXse5QyKyXfdm057X5ZPDBUp6nZOs9yq3zH3QWJOZgquR64uHRiWz35+e5ECUpQghKUMCFx03zpZbU/wePjOpG5rBrfaqaGzz9FlKAEJShBCUpQghKUoISNeAkwAAteNgN0VYtEAAAAAElFTkSuQmCC" alt="">
+                    </a></div>
+                <div class="head-navList">
+                    <ul class='list'>
+                        <li class='item'><a href="###">小米手机</a>
+                        </li>
+                        <li class='item'><a href="###">Redmi 红米</a></li>
+                        <li class='item'><a href="###">电视</a>
+                        </li>
+                        <li class='item'><a href="###">笔记本</a>
+                        </li>
+                        <li class='item'><a href="###">家电</a>
+                        </li>
+                        <li class='item'><a href="###">路由器</a>
+                        </li>
+                        <li class='item'><a href="###">智能硬件</a>
+                        </li>
+                        <li><a href="###">服务</a>
+                        </li>
+                        <li><a href="###">社区</a>
+                        </li>
+                        <div class='item-wrap'>
+                            <ul class='list-item'>
+                                <li class='goods'><a href="###"></a></li>
+                                <li class='line'></li>
+                                <li class='goods'><a href="###"></a></li>
+                                <li class='line'></li>
+                                <li class='goods'></li>
+                                <li class='line'></li>
+                                <li class='goods'><a href="###"></a></li>
+                                <li class='line'></li>
+                                <li class='goods'><a href="###"></a></li>
+                                <li class='line'></li>
+                                <li class='goods'><a href="###"></a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-left-container">
+                            <div class="nav-left-inner">
+                                <ul class='nav-list'>
+                                    <li><a href="">手机 电话卡<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">电视 盒子<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">笔记本 显示器<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">家电 插线板<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">出行 穿戴<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">智能 路由器<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">电源 配件<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">健康 儿童<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">耳机 音箱<i class='fas fa-angle-right'></i></a></li>
+                                    <li><a href="">生活 箱包<i class='fas fa-angle-right'></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="head-search">
+
+                    <input type="search">
+                    <button class='submit-btn'><i class='fa fa-search'></i></button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="body">
+        <div class="banner-wrap clearfix">
+            <div class="banner-inner">
+                <div class="button-prev"></div>
+                <div class="button-next"></div>
+                <div class="banner">
+                    <a href="###"><img id='banimg' src="/build/imgs/f3b4368a85.jpg" alt=""></a>
+                </div>
+                <div class="list-point">
+                    <a class='point' href="###"></a>
+                    <a class='point' href="###"></a>
+                    <a class='point' href="###"></a>
+                    <a class='point' href="###"></a>
+                    <a class='point' href="###"></a>
+                    <a class='point' href="###"></a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bottom clearfix">
+            <div class="navbo-wrap">
+                <div class="navbo-inner">
+                    <div class="navbo-list">
+                        <ul class='list'>
+                            <li><a href="###"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAA8ZJREFUaAXtmrFvEzEUxhtmVoRgLCNsDHSAAakbA2KA/yIjbEiZYakEC/wPDFTqjESLBAMbbIWRCiEhoSIm1PD97vwOp3fO2WdHSaQ+6cXO+b3vfb7z89lONjbOZLl3YFQi/HQ6BeeG9I50U3rZ06nqR9JvTr+q3JN+GI1GtC1PRHxb+kJ6JE0VfPDdzunBoCegoFsK+kR6ywv+RfXX0o9Su9uUiP9Eruv7XekVGpzsq3ykJ/LeLiykFPFN6SupyXdVHkuvpQbEx/mCYQI2Q7C8CJjh8tNFOlY5kZ7PjQSGwwITIUbWsGpxEuBY+leKcJcutowyL4DpsFVUscaZkLW7wHZAlJxIueuD8iaGDNguBrGQnRi/oI0AuPPIH+n9oGHhBmK5mCqmw56EHBnzDBvuxmDy8t1DU/tITCmx4ZCWE3JgtrGEnaQG9+2FU4l/LbYuR4YsApf42UnGJCpCmTXmKxR9xJL27Ygtbbj4bcG6HLakCNNa9mxTIekjGLCnAQ5Sm2J5gc4XGe9Lkcl8y7jWGmp4B4gCF4fDGzssMiJxEd6O2S8pIlVo+ghH7W+Bi9Te2DMJfe6U+wP3/ZnWJb9PtS3tq+Py3BHonhHVQxLGVpXJa5tQ74RZSag99rpAWDshcGxPLLpoyXsYCxpjR0QkxrbPRjCHFVi9Gq7M/SHEZgRhSbyqYtyM64bfAXtRsJ5fVTFuxnWmA2w6ENuE1N9W69O4Gdf170Bzf5Uc9rYrMv8bsEu6UknM+wA5Nnw/ByxIe4oy68RSgS4kuvSZGzfjOjOEOPpALtVF3qcj/8ahvMtDa7yNm3Gd6UArQRq3xIpH/qpcP0vvJUKEzC15jWv5DnSQv62lwI8Qo8TrczvAiRnCuc0gWTB5OBk34/qfp4JnLSUgL/0kRShLJzAr29ZSoumBGrMWc/I/kCKLIt+5mGumUY1TpqZd16MhSfdLvsw2Jce8o1MVxmnXcfXb6rruXvENTTtK+hXxCm5oWmgyfitFJq3GJV2AS8VI3HopyNCSucimvjdgj4H4pG3qwZNTc5Shur2+e0KVbya2zyU6gpyKHWxFB+0wFA8bOmkHW2DJucjRYgevqEuKP/xo0SIIZCxF1u9w1+vE+h6ve53gSXBKjJDg2UeOhm0lmA5bRcEfOLwA5ISdWDPFkmDZuzcwHJbtCIkxc/pmHLJLAa/cj3yD5nh1hFPip9Kb3l3J+Zn1QDgPtcZZ7M+sHtmqyqOWvpTakaSq0YIPvlnDZdAT6OgIOKG/GmDOFtB0df5qALMzybwD/wBtcKGMO6wgNwAAAABJRU5ErkJggg=='></img>
+                                    小米秒杀
+                                </a></li>
+                            <li><a href="###"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAjRJREFUaAXtl7tKA0EUho0JgpXaWVko+AKCnQSfQfCCrY2d+AIpFfEhRMXOMpVIsLSwsBEsrWzETkENxG/XnLBMdidnd2dYIjPwMztzzvznmtnNxEQY1Wag5tt8r9drYGMFdGu12oNve074cXoWbIMr8A5kHDkx4IMED5fBIeiAH5AcT/3Fpw/bhThxqAGa4BQ8g+T4ZnELDsBSZECEhYy5OoQTUWvsALM1Iv/ewAXYAjOmTfbiYe57X2O1DvZBB6S1xgn7a6BucwZ5PGw6XmRYPevbjqah1tAaFQ6tvjM9DH/0jW8yD7WG1lCVAcS2tY5m6fkKYDLL4LjshwCqrlSowNhVgNukLTeKYm6bAXJmytwrs/bdQr0U514IogXmU2TutzAUj7LMwpOYv3i+BKtlua3nxaBVSSEUHuYmuAZdIOOeh13gtL1it8SCwkerisnDegEcg+grVsYrDy3grr2E2eqdQpjFw/402AOPosMctdc5mFNQ21WEVLRYF7qFTB7hS87oNEGyvW6S8rTnKm6hND/iPf7034ENFot9pfVMZa1AkzkNV14erb7vCmhiK6UTAiiVPgeHc1eA3ix0C5m+ZvAMfTuZ58x17gBMghHrtG8h25G8+jauP5n2NhjFlJdHq++7AqPiKi0PAZROYUmCyiowLrdQ3vyGWyhvxirXr+w34CryEICrTBblCRUomjlX5/5PBTLejIMXi3wdFp0l49rzI/QH/xvGtQKDxEqgYa4qA78wVpSKCuyg/QAAAABJRU5ErkJggg=='></img>企业团购</a></li>
+                            <li><a href="###"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAA6lJREFUaAXtmitzFEEUhXcpJBEYHpGJwIBCsAJcUAgKwc9YGRRUrUCBIAYR/gJEkCowoBIECBSIFBVwkIdABApFMXxntu9u72MePbOTnanKqbrbvdP3ce70Y3t6ttU6wXzvQHsW4aMokp9ryC1kCVn0JKK+h/xw8o3yFfKh3W6rbX6A+AqyjuwhoZCNbFfKZFCoBwjaIegj5IYX/Cv1l8hHxO62SsHvkat8v40sq8Fhm/IePfLeLlRSQnwJ2UAMB1QeIJdDA8rG2cqHQb41BGcPHGu4/HSRflH2kDNlI8mH8yWfgmKUGlYTnHDYRf4igu7S+Qmlkhfk0/mmiGN1S7rsm+NsTR7BP0R3vdC8yUNGvl0MxRLW8tgl6uBAd174g9xNVJxxg2K5mBRRsZ7AUGNew0Z349jI271QTBdbHMLmBAZabWzC9szpcZdw0JAVxCX/6oSyJqqgsrIxn3VDFNtxoIg2svTjdhQ70gZa1ma+2uQi4SmJg+NCEf+Aeq1TqihtSxP0pjTP5ZK4xIzgNk5gZHigpMnyBjlElvlp/z1ukPYd+ye0a9uQBw/x/ymPIn71g6mtyjnkJnZvp9qh+AwR7k9VyLiI3U5sne8jaGXBpbYswrpPY9ADNKiuzdcF5ApZfvYV89TxsYPeJWQXeZ1h85QYXzJ0Bs341n5LPbaPLGI7uhVHwSavgheCEkCE54UcZBjhdzf27k3mU56NHkYEbYnrCuNmXFt+AvZDof18XWHcjOtIArZ62ENIHZMwbsa1+Qmc9m6zZWVZek3B1bNMNj06JmGfVeR7UmPKdeNmXIeqBDxyM3xheDWshr2tQs5VYvE4zHNfG28LzuOR2fuTWEcfwsV+UctP42ZcR+ZAcveE5/KCIZKG1XCXsYUNHeNaWQIF+WWapSagEzMhbfL1Neb3adyM60gP6LhP0KFTXWHcjOuQJ7NbTz92RBh8UCVP2NsqNPO9EL51ECaI42ATOliFmHHa3W26lO64sk6Fcdp0XCe5kZlOIgQd9wWfumFTSQ+Ii+NEkXFCgcKWtEBvMsX0K9hUlYA9Um6lM6AVEh2xB818qFeGkG/usYpLoNkHWy6J5h4tKgGBodTVZADNO9ztpxAn0dzjdS8J9UQzX3B4STT3FZOXRO1e8g02RUYyT8lw0mtWPRZe9/TLvGZ9h59V9jjVvmb1yMZVEtGw0nmq7WKp5oZsZBt0RjrOoVAPjDuBhPwk/dVA6noENKnPXw3E7AQl78B/Tu+UnY0TL7MAAAAASUVORK5CYII='></img>F码通道</a></li>
+                            <li><a href="###"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAkxJREFUaAXtmb1OAkEQx0HsjI2VBTYWxo7CxNLShGewsfINfAQtfARsjAW0NlLTWFj6CkKkUQsrLRT/c+4my3DL7cesF5KdZLjb2dnffOxxcNBoZFmBDsxmsza0D32BSskPQM/QC2grWRsAp+TfoCllAHiaIgCmzpMMoW2pToHVgh5Bp1CScyn2HAdgfdmIJW8GAP+Ysod8QLfNOZHzAo0XEZgFAvydinNjcQk3/1MBu4jzCaU39mF4tiUrbQXAfk/Kl/ja9Xqsu4SSPEKb2h59LJB44SApu+aCtwGdKO6ptkcfpRK1ccwE4XOi/OjOtGnOBZ/bAkvZeWLgPij2FZ8LGkslauPwpOB3AP2GfkH3+Lz3GJBC+EIpO+fSGOxrxb8tm/eySSVq45QlA9995f9aNu9lswWWstuSsfG5/xo3rNp4PSLhIdYufD7A5muPSMFhqetWOqC8XFzjrvwllAvwui4SOOcdSNBUL2TeAa92JXAO3gHcp7vQsb5fRxyJ0Q2trfLRjRIjeBNiBoF5jLHULxUT4HcYvzSu6eN0TgWQcOc/66Kd+1WNbRybnfOCLyEOqmucC6ir8zpu3gHdibqOeQfq6ryOm3dAd6KuY8xD/QRJ099PC5/SAcUQK0hiLqEzRAwObGRLDGKlEdfvJNLRXePG7IB0zkE8lwKmREZHpL46VyZqxCpiL1vgUsBIAXoGeBkzak7F6CnIqAo295BS5qyAT5jbKptPaHsHu4MHnaU3isodUIAOYANo5ZYKFEQxKFZl8gKxMiK6A783i1FkEwF8dQAAAABJRU5ErkJggg=='></img>米粉卡</a></li>
+                            <li><a href="###"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAABK1JREFUaAXtmcurTVEcx+9BHiFSV94TxUgMlMGlroEMvDKRkhFlguKvIMamQoYmQhl4hfLKQCgzkvf7UYhsn+++63fOfpx11trn7Kuj/Op71trr9/39fmutvV57nYGB/xLugSRJBsE1cDbM7jOGq/x9Usm1Pqte5+pQYfW8VV7pYGeLPtL+rco3RqvNNEDDZQh8AYrz3OEZ6VVwutFovCDtT1EDgOTzSFL6/U3JDbAXTOi7VlCp7Ph/yPMKMAx2gFPgKzB5TGY7GPNXGkKgWeAK0FDwCvpsI3KTGN1EsBncBSa3ySzwOqxDQYAl4ImLeCfkE162EaVlFH0DbAN6C5JXQHOnfsHxWmBj+jL5GTFR4M0EmhNnfHx008A5IPkBtvq4XZXjcB34BSTHwPiuHHUwwucYcBhI1Ih63gSOFoGPQHKgQx1qURHDGqHh1NucwIF6RZNLcgmM+kqhGMCGk2J3HxPjPUDyHsyvpYsjnBBLc8Im9vYIkzIFB5PBWyDZUmbkS+CcBZrck/Ka1pN0jhM8mcLT6iRRQ6pvdhhpl5SUlr9WlVo5eLdSdpIcaZXmc+iPOM6tvKb8BE9LrO0Te8uMQAnGD1ywTQFqqoa7FHx3NhuKNpRvcDpxlhb17Z7habOT3Gin95ZhsDg1GxlC47zEggKbfc7uDeksUysPVCbZZ+WhFK52bB07dHaaHeI39ZD3A8nRZmFEBr5e+3kZIkr1XCqLcNWkYK+zk2RXszCUgXwiNUmSnSFuUY+devu1s9cbsbeisuZbKdr5nrHRAVBy0scplUO+l5okyfKSMqIA2+x4986LCFcD+Bp2dbkUw085GLx0RtE9Bl/LaKwEl1GrLA51EpA8sjJLO+1w0x3po5FrTpMK/vQ1J5kzkkT80lo7dU6JoHspab/x4yVEKDCf4Px8K9I7vQH7Xo1vddF7fc82Gj4VXXZqQOXXRi+V5oAFdD2YTaLnAD7sDPbK/Fka04CFRq45rTKslrnY96LrQFftct11KtqoDdG6vI0quggfR52f6B1ca+9soO1b2/jE6GgFIrapFIqjHzEeC+xEvDjaUEQMb6bROVBVMsyQnX2V4ZKxTuuwyfl4kFPEPGBox2kdabu6xauhAXZBtiemzjkOwbX+PnaV2JZTRj700gBstzr7d6STI0PmaRjqxkyihkzLa8NP2Ghp9V6n+DxgMw98AJLdPl6wHOPsR70+tDstvUF/MQRi6Ph9AUjugN5i4mAB0BWH5HBMJXrhEONgGmnkKmdRL76atjgcArpskujeprdeaXpuZfA5HhwHkp9gfUtbQw6HmlTWCA0n75xAp7GvFWQwJjS86eAikHwCa2LsKnNwrDdhw0kTW1cfpSWWMlv+crfSvoDw7SLrKfklPl4t5QTQnNCNmYn2ic2guWOTHwSqvCTYCDiHgL6h59ZSyZATAml10hJr+wTZ9NihD3B9ww4D/anxEEiCjQjFHBU9FdNmpx1bxw6dndqJfRxFXZBVqWhp7FYxLnKpue5tNoJVQENBH0OCzkJTwXX+2FtJ+m8IDao0D/qqVf905dWTNKDSMtpt79e+m2Yqog/w62A14/5Npvx/NtsDfwBiZxZ7dseT8wAAAABJRU5ErkJggg=='></img>以旧换新</a></li>
+                            <li><a href="###"><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAfpJREFUaAXtWUtuwjAQJVWlHqM9BWxZl0twHLgPdNsDsO+6qNcoTd+AR0qGSTxOJkmj2tLI2PP85hsnEotFHjPJQFmWa8gn5AIZahA32Vhb01JYgUQM7LMV3xN3LoripSdH/TgC4My/1jV+K9jYQGhc/FgD0423LN2JBWGqnQdxfnbLHMDUJcsVyBXomYHcQpRA3N1HyDvkKZZQwgTsIYZ11cPodWikUJyCeq/pq3vA7QP2VN3n30Hn/8JsI4ZuCfkOsmJn5Az9qoJbSj2tob8OTddrL0YM/S5gPjDftRLtQUhHY9fkzE09wCdLjBj6qoN3rQQ9t44aIAcUs8O45NlCDIzaStiPtg47ZLHD2KTZSgxcrZWwrlamsXXYGasdxptnK7FwmNrG1DrsiNUO481zCjGw1Zbh20m9daQDKXbk2dZ1GzF09CJLHUfNIJNoOm1vyk8J/5eVFiHvpWaGzo1xZsoKcG56zS4BINPqM8CecSXErD4DfMY6uwRgNSZw+RmghExZAVGQbsscQLe8+Z2afQUe/XKhMr1hd9zbRnWDvAijSe+1n2pn9i2UA/Bqna48uQJdM+d17v9VANfcxit7kqcLd8rfrKO+kPA3q8m3lBb6kRkbcG22lRLA14AOS2qzrZQAtrByhpizI70yrImbbGwN2Az5Exn4BTXr06HbYA+OAAAAAElFTkSuQmCC'></img>话费充值</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbo-show">
+                        <ul>
+                            <li><a href="###"><img src="/build/imgs/92b361110c.jpg" alt=""></a></li>
+                            <li><a href="###"><img src="/build/imgs/f84d79aa3d.jpg" alt=""></a></li>
+                            <li><a href="###"><img src="/build/imgs/7dee307cca.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop">
+            <div class="shop-wrap">
+                <div class="flash-inner">
+                    <div class='flash-top'>
+                        <span>小米闪购</span>
+                        <div class='change clearfix'>
+                            <span class='fprev'><i class='fas fa-angle-left'></i></span>
+                            <span class='fnext'><i class='fas fa-angle-right'></i></span>
+                        </div>
+                    </div>
+                    <div class='flash-row'>
+                        <div class="flaLeft ">
+                            <div class='round'>00:00场</div>
+                            <img src="data:image/jpeg;base64,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" alt="">
+                            <div class='time-over'>距离结束还有</div>
+                            <div class="countdown">
+                                <span id='hour'></span>
+                                <i>:</i>
+                                <span id='minute'></span>
+                                <i>:</i>
+                                <span id='second'></span>
+                            </div>
+                        </div>
+                        <div class="flaRight ">
+                            <div class='fla-item'>
+                                <a href="">
+                                    <div class='item-ex'>
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA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" alt="">
+                                    </div>
+                                    <h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3>
+                                    <p class='ex'>全面屏高性能轻薄本</p>
+                                    <p class='price'>
+                                        <span>3299元</span>
+                                        <span>3799元</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class='fla-item'>
+                                <a href="">
+                                    <div class='item-ex'>
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA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" alt="">
+                                    </div>
+                                    <h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3>
+                                    <p class='ex'>全面屏高性能轻薄本</p>
+                                    <p class='price'>
+                                        <span>3299元</span>
+                                        <span>3799元</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class='fla-item'>
+                                <a href="">
+                                    <div class='item-ex'>
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA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" alt="">
+                                    </div>
+                                    <h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3>
+                                    <p class='ex'>全面屏高性能轻薄本</p>
+                                    <p class='price'>
+                                        <span>3299元</span>
+                                        <span>3799元</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class='fla-item'>
+                                <a href="">
+                                    <div class='item-ex'>
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA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" alt="">
+                                    </div>
+                                    <h3 class="title"> 14 Ⅱ R5 8G 512G 银色</h3>
+                                    <p class='ex'>全面屏高性能轻薄本</p>
+                                    <p class='price'>
+                                        <span>3299元</span>
+                                        <span>3799元</span>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='banner-imgP'>
+                    <a href="###">
+                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS81YzRjYzUwZWNiLndlYnAiOw==" alt="">
+                    </a>
+                </div>
+                <div class='shop-phone clearfix'>
+                    <div class="sp-inner">
+                        <div class="sp-top">
+                            <h2>手机</h2>
+                            <a href="###">查看全部<i class='fas fa-chevron-circle-right'></i></a>
+                        </div>
+                        <div class="sp-left">
+                            <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS81YmFjZWNmYjMzLndlYnAiOw==" alt="">
+                        </div>
+                        <div class="sp-right">
+                            <ul class="spr-item">
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS8xMTRiZDg1ODQ1LndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>小米10至尊版</h3>
+                                    <p class='dec'>120X 变焦/120W秒充/120Hz屏幕</p>
+                                    <p class="item-price">
+                                        <span>5299元起</span>
+                                    </p>
+                                </li>
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS9hM2U3MzBjODY4LndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>Redmi K30至尊版</h3>
+                                    <p class='dec'>120Hz弹出全面屏 天玑1000+旗舰处理器</p>
+                                    <p class="item-price">
+                                        <span>1999元起</span>
+                                    </p>
+                                </li>
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS9kMjVhMTI3Y2RmLndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>腾讯黑鲨3S</h3>
+                                    <p class='dec'>骁龙865处理器，120Hz刷新率</p>
+                                    <p class="item-price">
+                                        <span>3999元起</span>
+                                    </p>
+                                </li>
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS85ODcwZTNiZWI0LndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>Redmi 9A</h3>
+                                    <p class='dec'>5000mAh长循环大电量，6.53"超大护眼屏幕</p>
+                                    <p class="item-price">
+                                        <span>499元起</span>
+                                    </p>
+                                </li>
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS83ZjkzNGViZjNlLndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>小米10 青春版 5G</h3>
+                                    <p class='dec'>50倍潜望式变焦/轻薄5G手机</p>
+                                    <p class="item-price">
+                                        <span>1899元起</span>
+                                        <span>2099元</span>
+                                    </p>
+                                </li>
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS8yMmJiMTgxZTYyLndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>小米10</h3>
+                                    <p class='dec'>骁龙865/10亿像素手机</p>
+                                    <p class="item-price">
+                                        <span>3699元起</span>
+                                        <span>3999元</span>
+                                    </p>
+                                </li>
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS8zNGNlYjg0YTFiLndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>Redmi K30 Pro</h3>
+                                    <p class='dec'>双模5G,骁龙865，弹出全面屏</p>
+                                    <p class="item-price">
+                                        <span>2699元起</span>
+                                        <span>2999元</span>
+                                    </p>
+                                </li>
+                                <li class='r-items'>
+                                    <div class='figure-img'>
+                                        <img src="data:image/webp;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZWxzZS82ZmZhMTNlZjNmLndlYnAiOw==" alt="">
+                                    </div>
+                                    <h3 class='title'>Redmi K30 Pro变焦版</h3>
+                                    <p class='dec'>双模5G,骁龙865，弹出全面屏</p>
+                                    <p class="item-price">
+                                        <span>3799元起</span>
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <div class="container">
+            <div class="foot-serve">
+                <ul class='ser-list'>
+                    <li><a href=""><i class='fas fa-wrench'></i>预约维修服务</a></li>
+                    <li><a href=""><i class='fas fa-history'></i>7天无理由退货</a></li>
+                    <li><a href=""><i class='fas fa-history'></i>15天免费退换货</a></li>
+                    <li><a href=""><i class='fas fa-gift'></i>满99包邮</a></li>
+                    <li><a href=""><i class='fas fa-location-arrow'></i>520余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="footer-link clearfix">
+                <dl class="col-link">
+                    <dt>帮助中心</dt>
+                    <dd><a href="###">账户管理</a></dd>
+                    <dd><a href="###">购物指南</a></dd>
+                    <dd><a href="###">订单操作</a></dd>
+                </dl>
+                <dl class="col-link">
+                    <dt>服务支持</dt>
+                    <dd><a href="###">售后政策</a></dd>
+                    <dd><a href="###">自助服务</a></dd>
+                    <dd><a href="###">相关下载</a></dd>
+                </dl>
+                <dl class="col-link">
+                    <dt>线下门店</dt>
+                    <dd><a href="###">小米之家</a></dd>
+                    <dd><a href="###">服务网点</a></dd>
+                    <dd><a href="###">授权体验店</a></dd>
+                </dl>
+                <dl class="col-link">
+                    <dt>关于小米</dt>
+                    <dd><a href="###">了解小米</a></dd>
+                    <dd><a href="###">加入小米</a></dd>
+                    <dd><a href="###">投资者关系</a></dd>
+                    <dd><a href="###">企业社会责任</a></dd>
+                    <dd><a href="###">廉洁举报</a></dd>
+                </dl>
+                <dl class="col-link">
+                    <dt>关注我们</dt>
+                    <dd><a href="###">新浪微博</a></dd>
+                    <dd><a href="###">官方微信</a></dd>
+                    <dd><a href="###">联系我们</a></dd>
+                    <dd><a href="###">公益基金会</a></dd>
+                </dl>
+                <dl class="col-link">
+                    <dt>特色服务</dt>
+                    <dd><a href="###">F码通道</a></dd>
+                    <dd><a href="###">礼物码</a></dd>
+                    <dd><a href="###">防伪查询</a></dd>
+                </dl>
+                <div class="col-contact clearfix">
+                    <p class='phone-num'>400-100-5678</p>
+                    <p>8:00-18:00(仅收市话费)</p>
+                    <a href="###" class='btn'>
+                        <i class='fas fa-comment-dots'></i>
+                        人工客服
+                    </a>
+                    <div class='fllow'>
+                        关注小米:
+                        <a href="###"></a>
+                        <a href="###"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/build/js/main.js"></script></body>
+
+</html>

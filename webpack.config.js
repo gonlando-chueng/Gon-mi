@@ -1,0 +1,49 @@
+const { resolve } = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+module.exports = {
+  entry:'./src/main.js',
+  output:{
+    filename:'js/main.js',
+    path:resolve(__dirname,'build'),
+    publicPath:'/build/'
+  },
+  module:{
+    rules:[
+      {
+        test:/\.css$/,
+        use:[
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test:/\.(jpg|png|webp|ico)$/,
+        loader:'url-loader',
+        options:{
+          limit:8*1024,
+          name:'[hash:10].[ext]',
+          esMoudle:false,
+          outputPath:'imgs'
+        }
+      },
+      {
+        test:/\.html$/,
+        loader:'html-loader'
+      },
+      {
+        exclude:/\.(html|js|css|less|jpg|png|gif)/,
+        loader:'file-loader',
+        options:{
+          name:'[hash:10].[ext]',
+          outputPath:'else'
+        }
+      },
+    ]
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+      template:'./src/xiaomi.html'
+    })
+  ],
+  mode:'development'
+}
